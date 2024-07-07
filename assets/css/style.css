@@ -7,6 +7,10 @@
 h1 {
   font-size: clamp(1.563rem, 2vw + 1.25rem, 2.5rem);
 }
+
+/* h5 {
+  margin-bottom: 0;
+} */
 .navbar {
   background-color: #373a3c;
 }
@@ -44,6 +48,22 @@ h1 {
   margin: 0;
 }
 
+/* RECETAS RELACIONADAS */
+.card-title {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.rotate-drop-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.rotate-drop-up {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
 /* FOOTER */
 footer {
   background-color: #dc3545;
@@ -65,5 +85,11 @@ footer .btn-empezar .btn-header:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .contenedor-relacionadas {
+    h2 {
+      text-align: center;
+    }
   }
 }

@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Ricomida</title>
 </head>
 
@@ -64,9 +65,12 @@
                     <div class="row">
                         <div class="col-12 d-flex gap-3 animate__animated animate__fadeInUp">
                             <button type="button" class="btn btn-header" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom" title="Presiona para enviar a tu correo.">Enviar por
+                                data-bs-placement="bottom" title="Presiona para enviar a tu correo."
+                                id="enviarCorreo">Enviar por
                                 correo</button>
-                            <button type="button" class="btn btn-header">Añadir a favoritos</button>
+                            <button type="button" class="btn btn-header" data-bs-toggle="tooltip"
+                                data-bs-placement="right" title="Agrega esta receta a tus favoritos">Añadir a
+                                favoritos</button>
                         </div>
                     </div>
                 </div>
@@ -74,8 +78,9 @@
         </div>
     </section>
 
-    <section class="container d-none d-md-block">
-        <div id="carouselExampleIndicators" class="carousel slide animate__animated animate__fadeInUp">
+    <!-- Carrousel -->
+    <section class="container  d-none d-md-block">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -99,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <div class="row">
                         <div class="col-3">
                             <img src="./assets/img/slider-5.png" class="d-block w-100" alt="Slider 5">
@@ -116,27 +121,27 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
         <div class="py-5">
             <hr class="border border-dark border-1 opacity-100">
         </div>
     </section>
 
+    <!-- Sección Ingredientes Preparación -->>
     <section class="container contenedor-ppal animate__animated animate__fadeInUp animate__delay-1s">
         <div class="row">
             <div class="col-12 col-md-6">
-                <h2>INGREDIENTES </h2>
+                <h2 class="border-bottom border-dark pb-2 d-inline-block">INGREDIENTES </h2>
 
                 <p class="py-3">Masa</p>
 
@@ -169,7 +174,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <h2>PREPARACIÓN</h2>
+                <h2 class="border-bottom border-dark pb-2 d-inline-block">PREPARACIÓN</h2>
 
 
                 <ol class="ps-3 ms-0">
@@ -214,16 +219,19 @@
         </div>
     </section>
 
-    <!-- RECETAS RELACIONADAS -->
-    <section class="container pb-5" id="section3">
-        <h2>RECETAS RELACIONADAS</h2>
+    <!-- Sección Recetas Relacionadas -->
+    <section class="container contenedor-relacionadas pb-5" id="section3">
+        <h2 class="pb-5">RECETAS RELACIONADAS</h2>
 
         <div class="row animate__animated animate__fadeInUp animate__delay-3s">
-            <div class="col-12 col-md-4 ">
+            <div class="col-12 col-md-4 pb-3">
                 <div class="card">
                     <img src="./assets/img/recipe-card-1.png" class="card-img-top" alt="Panqueques con manjar y crema">
                     <div class="card-body">
-                        <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+                        <div class="card-title d-flex justify-content-between">
+                            <h5>PANQUEQUES CON MANJAR Y CREMA</h5>
+                            <img id="dropdown" src="./assets/img/dropdown-icon.png" alt="">
+                        </div>
                         <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est
                             vulputate nostra, blandit erat luctus faucibus orci.</p>
                     </div>
@@ -234,7 +242,10 @@
                 <div class="card">
                     <img src="./assets/img/recipe-card-2.png" class="card-img-top" alt="Tiramisú">
                     <div class="card-body">
-                        <h5 class="card-title">TIRAMISÚ</h5>
+                        <div class="card-title d-flex justify-content-between">
+                            <h5>TIRAMISÚ</h5>
+                            <img id="dropdown" src="./assets/img/dropdown-icon.png" alt="">
+                        </div>
                         <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus
                             lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
                     </div>
@@ -245,7 +256,10 @@
                 <div class="card">
                     <img src="./assets/img/recipe-card-3.png" class="card-img-top" alt="Plateada">
                     <div class="card-body">
-                        <h5 class="card-title">PLATEADA</h5>
+                        <div class="card-title d-flex justify-content-between">
+                            <h5 class="card-title">PLATEADA</h5>
+                            <img id="dropdown" src="./assets/img/dropdown-icon.png" alt="">
+                        </div>
                         <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet
                             ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
                     </div>
@@ -270,6 +284,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d2e407d1e0.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
