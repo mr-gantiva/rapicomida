@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: clamp(1.563rem, 2vw + 1.25rem, 2.5rem);
+}
 .navbar {
   background-color: #373a3c;
 }
@@ -46,4 +55,15 @@ footer .btn-empezar .btn-header {
 }
 footer .btn-empezar .btn-header:hover {
   color: #dc3545;
+}
+
+@media (300px <= width <= 540px) {
+  .contenedor-titulo {
+    text-align: center;
+  }
+  .box-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
