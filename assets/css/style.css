@@ -53,6 +53,7 @@ h1 {
   img {
     width: 20px;
     height: 20px;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -75,6 +76,10 @@ footer .btn-empezar .btn-header {
 }
 footer .btn-empezar .btn-header:hover {
   color: #dc3545;
+}
+
+footer span {
+  font-family: "Lobster", sans-serif;
 }
 
 @media (300px <= width <= 540px) {
