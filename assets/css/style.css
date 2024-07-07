@@ -31,6 +31,18 @@ h1 {
   background-color: #dddddd;
   transform: scale(1.1);
 }
+
+.box-img-ppal {
+  overflow: hidden;
+  & img {
+    transition: all 0.5s ease;
+  }
+  & img:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Carrusel */
 .carousel-indicators {
   bottom: -60px;
 }
@@ -64,6 +76,16 @@ h1 {
 .rotate-drop-up {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
+}
+
+.card-header {
+  overflow: hidden;
+  & img {
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 /* FOOTER */
 footer {
