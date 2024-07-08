@@ -69,15 +69,6 @@ h1 {
   }
 }
 
-.rotate-drop-down {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-.rotate-drop-up {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-
 .card-header {
   overflow: hidden;
   & img {
@@ -87,6 +78,16 @@ h1 {
     }
   }
 }
+
+.rotate-drop-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.rotate-drop-up {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
 /* FOOTER */
 footer {
   background-color: #dc3545;
