@@ -73,4 +73,5 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más 
 
 ## Autor
 Iván Vargas Gantiva - [mr-gantiva](https://github.com/mr-gantiva)
+Paulina Ortega
 

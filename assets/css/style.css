@@ -114,6 +114,11 @@ footer .btn-empezar .btn-header:hover {
 footer span {
   font-family: "Lobster", sans-serif;
 }
+.newsletter {
+  & span {
+    font-size: 2rem;
+  }
+}
 
 @media (300px <= width <= 540px) {
   .contenedor-titulo {
