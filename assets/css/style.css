@@ -53,6 +53,16 @@ h1 {
   height: 15px;
 }
 
+.img-slide {
+  overflow: hidden;
+  & img {
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
 /* SECCION INGREDIENTES */
 .contenedor-ppal ul {
   list-style-type: none;
